@@ -50,6 +50,7 @@ body, html {
       <a href="#research" class="w3-bar-item w3-button"><i class="fa fa-dna"></i> RESEARCH</a>
       <a href="#openpositions" class="w3-bar-item w3-button"><i class="fa fa-user-plus"></i> OPEN POSITIONS</a>
       <a href="#publications" class="w3-bar-item w3-button"><i class="fa fa-book"></i> PUBLICATIONS</a>
+      <a href="#photos" class="w3-bar-item w3-button"><i class="fa fa-camera"></i> PHOTOS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -68,6 +69,7 @@ body, html {
   <a href="#research" onclick="w3_close()">RESEARCH</a>
   <a href="#openpositions" onclick="w3_close()">OPEN POSITIONS</a>
   <a href="#publications" onclick="w3_close()">PUBLICATIONS</a>
+  <a href="#photos" onclick="w3_close()">PHOTOS</a>
   <a href="#contact" onclick="w3_close()">CONTACT</a>
 </nav>
 
@@ -308,11 +310,11 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="openpositions">
   <h3>OPEN POSITIONS</h3>
   <div class="w3-container w3-row-padding w3-content">
-  <div class="w3-border">
-    <div class="w3-bar">
-      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'AlwaysLooking')">Work with us</button>
-      <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'PhDstudent')"><del>PhD student</del></button>
-    </div>
+    <div class="w3-border" style="margin-top:32px">
+      <div class="w3-bar">
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'AlwaysLooking')">Work with us</button>
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'PhDstudent')"><del>PhD student</del></button>
+      </div>
       <div id="AlwaysLooking" class="w3-container city w3-animate-opacity">
         <p>If you are interested in virology and stem cell technology, please apply. We are currently searching for MSc and PhD students.</p>
       </div>
@@ -385,8 +387,34 @@ body, html {
   </div>
 </div>
 
+<!-- Photos Section -->
+<div class="w3-container w3-padding-64 w3-center w3-light-gray" id="photos">
+  <h3>LAB PHOTOS</h3>
+
+<div class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="lab_photos/xmas_dinner.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    First Christmas dinner (2018)
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="/Users/luisvalesilva/Desktop/DrVynueW4AMOfZI.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    Captain tiny arm and his side kick, baby giant hand
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+</div>
+
 <!-- Contact Section -->
-<div class="w3-container w3-padding-128 w3-light-grey w3-center" id="contact">
+<div class="w3-container w3-padding-128 w3-center" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <div class="w3-center w3-padding-large">
     <img src="img/loan.jpg" class="w3-circle w3-image" alt="Loan" width="150px">
@@ -466,6 +494,25 @@ function openCity(evt, cityName) {
 
 var mybtn = document.getElementsByClassName("testbtn")[0];
 mybtn.click();
+
+// Slideshows
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 </script>
 <script src="js/icosahedron.js"></script>
 <!-- Smooth scrolling to anchors -->
