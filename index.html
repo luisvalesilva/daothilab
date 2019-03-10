@@ -431,43 +431,80 @@ body, html {
   </div>
 </div>
 
-<!-- Photos Section -->
+<!-- News Section -->
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
-<div class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+<div id="1stEssen" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
 
 <div class="w3-display-container mySlides">
-  <img src="lab_photos/xmas_dinner1.jpg" style="width:100%">
+  <img src="img/news/1stEssen_meeting.jpg" style="width:100%">
   <div class="w3-large w3-container w3-padding-16 w3-black">
-    First Christmas dinner (2018)
+    Feb 2019: The lab attended the 1st Essen Hepatitis E meeting 
   </div>
 </div>
 
 <div class="w3-display-container mySlides">
-  <img src="lab_photos/xmas_dinner2.jpg" style="width:100%">
+  <img src="img/news/1stEssen_Cindys_talk.jpg" style="width:100%">
   <div class="w3-large w3-container w3-padding-16 w3-black">
-    First Christmas dinner (2018)
+    Feb 2019: Cindy gave a talk at the 1st Essen Hepatitis E meeting
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow2)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow2)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+</div>
+</div>
+
+</br>
+
+<div id="Xmas18" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/xmas_dinner1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    Dec 2018: First Christmas dinner
   </div>
 </div>
 
 <div class="w3-display-container mySlides">
-  <img src="lab_photos/xmas_dinner3.jpg" style="width:100%">
+  <img src="img/news/xmas_dinner2.jpg" style="width:100%">
   <div class="w3-large w3-container w3-padding-16 w3-black">
-    First Christmas dinner (2018)
+    Dec 2018: First Christmas dinner
   </div>
 </div>
 
 <div class="w3-display-container mySlides">
-  <img src="lab_photos/xmas_dinner4.jpg" style="width:100%">
+  <img src="img/news/xmas_dinner3.jpg" style="width:100%">
   <div class="w3-large w3-container w3-padding-16 w3-black">
-    First Christmas dinner (2018)
+    Dec 2018: First Christmas dinner
   </div>
 </div>
 
-<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+<div class="w3-display-container mySlides">
+  <img src="img/news/xmas_dinner4.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    Dec 2018: First Christmas dinner
+  </div>
+</div>
 
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow1)">&#10095;</button>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+</div>
+
+</div>
 </div>
 </div>
 
@@ -554,22 +591,37 @@ var mybtn = document.getElementsByClassName("testbtn")[0];
 mybtn.click();
 
 // Slideshows
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideshow1 = document.getElementById("Xmas18");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+var slideshow2 = document.getElementById("1stEssen");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
 }
 
-function showDivs(n) {
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
 }
 </script>
 <script src="js/icosahedron.js"></script>
