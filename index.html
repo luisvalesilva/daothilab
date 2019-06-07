@@ -441,6 +441,57 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
+<div id="BASF" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/BASF_Firmencup/BASF_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2019:</span> The lab participated in the BASF Firmencup race 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/BASF_Firmencup/BASF_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2019:</span> The lab participated in the BASF Firmencup race 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/BASF_Firmencup/BASF_3.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2019:</span> The lab participated in the BASF Firmencup race 
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow3)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow3)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow3)"></span> 
+</div>
+
+</div>
+
+</br>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">May 2019:</span> <strong>Lars</strong> started his MD thesis in the lab</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
 <div id="1stEssen" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
 
 <div class="w3-display-container mySlides">
@@ -464,6 +515,7 @@ body, html {
   <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
   <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
 </div>
+
 </div>
 
 </br>
@@ -487,7 +539,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col w3-container s0 m1 l2"></div>
       <div class="w3-col w3-container s12 m10 l8">
-        <div class="w3-card-2">
+        <div class="w3-card-2 w3-white">
           <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
           <div class="w3-container w3-large w3-black">
             <p><span class="w3-text-teal">Feb 2019:</span> <strong>Charlotte</strong> and <strong>Rebecca</strong> joined the lab as our first PhD students</p>
@@ -634,6 +686,9 @@ var slideshow2 = document.getElementById("1stEssen");
 slideshow2.currentSlideIndex = 1;
 showSlides(slideshow2.currentSlideIndex, slideshow2);
 
+var slideshow3 = document.getElementById("BASF");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
