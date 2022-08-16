@@ -550,6 +550,21 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-award w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Sept 2022:</span> Congrats to <strong>Jun-Gen</strong> for being accepted at the EASL Basic Science School: Precision Cut Liver Slices and Liver Organoids</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
 <br/>
 <div class="w3-container w3-row-padding w3-content">
   <div class="w3-row">
@@ -558,7 +573,73 @@ body, html {
       <div class="w3-card-2 w3-white">
         <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
         <div class="w3-container w3-large w3-black">
-          <p><span class="w3-text-teal">Feb 2022:</span> <strong>Jana</strong> joined the lab as an MD student</p>
+          <p><span class="w3-text-teal">July 2022:</span> <strong>Zoé</strong> joined the lab as an MSc student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div id="HCVFlavi" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/HCVFlavi/HCVFlavi_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">July 2022:</span> With Rebecca, Jun-Gen, and Ann-Kathrin at the HCVFlavi meeting. Eating eclairs with little viruses at the social event, yummy! 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/HCVFlavi/HCVFlavi_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">July 2022:</span> Congrats to Ann-Kathrin for winning a best pitch talk award for her brilliant presentationi at the HCVFlavi meeting. 
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow6)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow6)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow6)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow6)"></span> 
+</div>
+</div>
+
+<div id="ILC_London" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/ILC_London/ILC_London_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2022:</span> With Huanting and Sarah at the ILC in London 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/ILC_London/ILC_London_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2022:</span> Congrats to Sarah for winning a young investigator bursary and presenting her poster at the ILC in London!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow5)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow5)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+</div>
+</div>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">May 2022:</span> <strong>Valentina</strong> joined the lab as an MSc student</p>
         </div>
       </div>
     <div class="w3-col w3-container s0 m1 l2"></div>
@@ -1033,6 +1114,15 @@ showSlides(slideshow3.currentSlideIndex, slideshow3);
 var slideshow4 = document.getElementById("Xmas19");
 slideshow4.currentSlideIndex = 1;
 showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+var slideshow5 = document.getElementById("ILC_London");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+var slideshow6 = document.getElementById("HCVFlavi");
+slideshow6.currentSlideIndex = 1;
+showSlides(slideshow6.currentSlideIndex, slideshow6);
+
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
