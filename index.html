@@ -577,6 +577,48 @@ body, html {
   <h3>LAB NEWS</h3>
 
 <br/>
+<div id="ECV_Poland" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Group.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> At the European Congress of Virology in Gdansk, Poland. Big congrats to all presenters for winning travel grants!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Ann-Kathrin.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Ann-Kathrin presenting her work model on innate immune responses to HEV infections.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Jun-Gen.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Jun-Gen presenting his ORF2 project.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Rebecca.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Rebecca presenting her work on HEV cell entry.
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow8)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow8)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow8)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow8)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow8)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow8)"></span>
+</div>
+</div>
+
+<br/>
 <div id="SoV_Ulm" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
 
 <div class="w3-display-container mySlides">
@@ -1211,6 +1253,9 @@ var slideshow7 = document.getElementById("SoV_Ulm");
 slideshow7.currentSlideIndex = 1;
 showSlides(slideshow7.currentSlideIndex, slideshow7);
 
+var slideshow8 = document.getElementById("ECV_Poland");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow8);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
