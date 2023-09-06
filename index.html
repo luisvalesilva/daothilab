@@ -577,6 +577,56 @@ body, html {
   <h3>LAB NEWS</h3>
 
 <br/>
+<div id="Bouldering" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_3.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_4.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_5.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow8)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow8)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(5, slideshow9)"></span>
+</div>
+</div>
+
+<br/>
 <div id="ECV_Poland" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
 
 <div class="w3-display-container mySlides">
@@ -1255,7 +1305,12 @@ showSlides(slideshow7.currentSlideIndex, slideshow7);
 
 var slideshow8 = document.getElementById("ECV_Poland");
 slideshow8.currentSlideIndex = 1;
-showSlides(slideshow7.currentSlideIndex, slideshow8);
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
+var slideshow9 = document.getElementById("Bouldering");
+slideshow9.currentSlideIndex = 1;
+showSlides(slideshow9.currentSlideIndex, slideshow9);
+
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
