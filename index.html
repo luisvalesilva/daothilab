@@ -545,6 +545,76 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">July 2024:</span> Congrats to <strong>Charlotte</strong> on the brilliant defense of her thesis</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div id="Sarah2024" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_2024_Sarah/Sarah2024_1.png" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2024:</span> Congrats to Sarah for a Young Scientist Award at the DZIF Translational Hepatitis Meeting
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_2024_Sarah/Sarah2024_2.png" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2024:</span> Congrats to Sarah for a Young Scientist Award at the DZIF Translational Hepatitis Meeting
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow10)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow10)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow10)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow10)"></span>
+</div>
+</div>
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/GfV_2023.png" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">March 2024:</span> Brilliant oral presentation by <strong>Ann-Kathrin</strong> at the GfV meeting in Vienna</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/EASL_2023.png" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">June 2023:</span> With Rebecca and JunGen (and Clara) at the EASL in Vienna</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+
 <br/>
 <div id="Bouldering" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
 
@@ -1279,6 +1349,10 @@ showSlides(slideshow8.currentSlideIndex, slideshow8);
 var slideshow9 = document.getElementById("Bouldering");
 slideshow9.currentSlideIndex = 1;
 showSlides(slideshow9.currentSlideIndex, slideshow9);
+
+var slideshow10 = document.getElementById("Sarah2024");
+slideshow10.currentSlideIndex = 1;
+showSlides(slideshow10.currentSlideIndex, slideshow10);
 
 
 function plusSlides(n, slideshow) {
