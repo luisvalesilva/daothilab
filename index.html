@@ -595,6 +595,88 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
+  <div id="LaserTag2024" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+    <div class="w3-display-container mySlides">
+      <img src="img/news/Oct_24_Lasertag/Lasertag_1.png" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">October 2024:</span> Laser  tag fun at our latest lab outing
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/Oct_24_Lasertag/Lasertag_2.png" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">October 2024:</span> Laser  tag fun at our latest lab outing
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/Oct_24_Lasertag/Lasertag_3.png" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">October 2024:</span> Laser  tag fun at our latest lab outing
+      </div>
+    </div>
+    
+    <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow12)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow12)">&#10095;</button>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1, slideshow12)"></span>
+      <span class="dot" onclick="currentSlide(2, slideshow12)"></span>
+      <span class="dot" onclick="currentSlide(3, slideshow12)"></span>
+    </div>
+    </div>
+    
+    <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">October 2024:</span> <strong>Elif</strong> and <strong>Paula</strong> joined the lab as PhD students</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">September 2024:</span> Huanting's paper is <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1038/s44319-024-00236-0">online</a></p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">August 2024:</span> <strong>Niclas</strong> Meier started his Master thesis in the lab</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
 <div class="w3-container w3-row-padding w3-content">
   <div class="w3-row">
     <div class="w3-col w3-container s0 m1 l2"></div>
@@ -692,7 +774,7 @@ body, html {
   </div>
   </div>
   
-  <br/>  
+  <br/>
 <div class="w3-container w3-row-padding w3-content">
   <div class="w3-row">
     <div class="w3-col w3-container s0 m1 l2"></div>
@@ -1449,6 +1531,10 @@ showSlides(slideshow10.currentSlideIndex, slideshow10);
 var slideshow11 = document.getElementById("Bangladesh2023");
 slideshow11.currentSlideIndex = 1;
 showSlides(slideshow11.currentSlideIndex, slideshow11);
+
+var slideshow12 = document.getElementById("LaserTag2024");
+slideshow12.currentSlideIndex = 1;
+showSlides(slideshow11.currentSlideIndex, slideshow12);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
