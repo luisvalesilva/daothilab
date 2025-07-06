@@ -582,6 +582,32 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
+<br/>
+<div id="LabHike2025" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+  <div class="w3-display-container mySlides">
+    <img src="img/news/April25_Lab_hike/Lab_hike_1.jpg" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">April 2025:</span> Lab hike in the Wolf Canyon-organised by Niclas
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/news/April25_Lab_hike/Lab_hike_2.jpg" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">April 2025:</span> Lab hike in the Wolf Canyon-organised by Niclas
+    </div>
+  </div>
+  
+  <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow13)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow13)">&#10095;</button>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, slideshow13)"></span>
+    <span class="dot" onclick="currentSlide(2, slideshow13)"></span>
+  </div>
+</div>
+  
   <br/>
   <div class="w3-container w3-row-padding w3-content">
     <div class="w3-row">
@@ -1538,7 +1564,11 @@ showSlides(slideshow11.currentSlideIndex, slideshow11);
 
 var slideshow12 = document.getElementById("LaserTag2024");
 slideshow12.currentSlideIndex = 1;
-showSlides(slideshow11.currentSlideIndex, slideshow12);
+showSlides(slideshow12.currentSlideIndex, slideshow12);
+
+var slideshow13 = document.getElementById("LabHike2025");
+slideshow13.currentSlideIndex = 1;
+showSlides(slideshow13.currentSlideIndex, slideshow13);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
