@@ -582,6 +582,40 @@ body, html {
 <div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
   <h3>LAB NEWS</h3>
 
+  <br/>
+  <div id="BASFFirmencup2025" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+    <div class="w3-display-container mySlides">
+      <img src="img/news/June25_BASF_Firmencup/Picture1.jpg" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">June 2025:</span> Thanks to Sarah, we participated in the BASF Firmencup again. Congrats to all the runners on finishing the race!
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/June25_BASF_Firmencup/Picture2.jpg" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">June 2025:</span> Thanks to Sarah, we participated in the BASF Firmencup again. Congrats to all the runners on finishing the race!
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/June25_BASF_Firmencup/Picture3.jpg" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">June 2025:</span> Thanks to Sarah, we participated in the BASF Firmencup again. Congrats to all the runners on finishing the race!
+      </div>
+    </div>
+    
+    <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow14)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow14)">&#10095;</button>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1, slideshow14)"></span>
+      <span class="dot" onclick="currentSlide(2, slideshow14)"></span>
+      <span class="dot" onclick="currentSlide(3, slideshow14)"></span>
+    </div>
+</div>
+  
 <br/>
 <div id="LabHike2025" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
 
@@ -1569,6 +1603,10 @@ showSlides(slideshow12.currentSlideIndex, slideshow12);
 var slideshow13 = document.getElementById("LabHike2025");
 slideshow13.currentSlideIndex = 1;
 showSlides(slideshow13.currentSlideIndex, slideshow13);
+
+var slideshow14 = document.getElementById("BASFFirmencup2025");
+slideshow14.currentSlideIndex = 1;
+showSlides(slideshow14.currentSlideIndex, slideshow14);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
