@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71624249-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-71624249-4');
+</script>
+<title>Dao Thi Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="dao thi lab, HEV, stem cells, precision medicine">
+<meta name="author" content="Luis Vale Silva">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<link rel="icon" href="img/icosa.ico" type="image/x-icon">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/white.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-gray w3-card-2" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#research" class="w3-bar-item w3-button"><i class="fa fa-dna"></i> RESEARCH</a>
+      <a href="#openpositions" class="w3-bar-item w3-button"><i class="fa fa-user-plus"></i> OPEN POSITIONS</a>
+      <a href="#publications" class="w3-bar-item w3-button"><i class="fa fa-book"></i> PUBLICATIONS</a>
+      <a href="#news" class="w3-bar-item w3-button"><i class="fa fa-newspaper"></i> NEWS</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+      <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()">ABOUT</a>
+  <a href="#team" onclick="w3_close()">TEAM</a>
+  <a href="#research" onclick="w3_close()">RESEARCH</a>
+  <a href="#openpositions" onclick="w3_close()">OPEN POSITIONS</a>
+  <a href="#publications" onclick="w3_close()">PUBLICATIONS</a>
+  <a href="#news" onclick="w3_close()">NEWS</a>
+  <a href="#contact" onclick="w3_close()">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+    <!-- <div class="w3-display-middle w3-center" style="white-space:nowrap;"> -->
+  <div class="w3-display-middle w3-center" style="white-space">
+    <span class="w3-xxxlarge"><canvas id="canvas"></canvas></span><br>
+    <span class="w3-xxlarge">Dao Thi Lab</span><br>
+    <span class="w3-large w3-hide-small">We study hepatitis E virus-host interactions using stem cell-derived culture systems</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-xlarge w3-margin-top w3-hover-opacity-off"><i class="fa fa-chevron-down"></i></a></p>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-display-container w3-padding-128" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+    <div class="w3-container w3-row-padding w3-content">
+      <div class="w3-quarter">
+        <p></p>
+      </div>
+      <div class="w3-half">
+        <img src="img/ciid.jpg" alt="CIID building" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <p></p>
+      </div>
+    </div>
+  <div class="w3-container w3-row-padding w3-content">
+    <p class="w3-large">We are an international team of scientists who enjoy studying viruses.
+    We use stem cell-derived culture systems to study hepatitis E virus-host interactions.</p>
+
+    <p class="w3-large">Our lab is a part of the Center of Integrative Infectious Disease Research (CIID) at the Heidelberg University Hospital.
+    Our research is generously supported by the Chica and Heinz Schaller Foundation.</p>
+    <div class="w3-container w3-row-padding w3-content">
+      <div class="w3-half w3-center">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.heidelberg-university-hospital.com/home/"><img src="img/Uni.png" alt="Uni klinikum" style="max-width:250px; height:auto"></a>
+      </div>
+      <div class="w3-half w3-center">
+        <a target="_blank" rel="noopener noreferrer" href="http://www.chs-stiftung.org/"><img src="img/CHSF.webp" alt="CHS foundation" style="max-width:350px; height:auto" class="responsive"></a>
+      </div>
+    </div>
+    <div class="w3-center w3-padding-32">
+      <p><a href="#research" class="w3-button w3-black"><i class="fa fa-th"> </i> More about our work</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-light-grey w3-padding-128" id="team">
+  <h3 class="w3-center">WHO WE ARE</h3>
+
+  <div class="w3-container w3-center" style="margin-top:64px">
+      <img src="img/Team.jpg" style="max-width:100%; height:auto">
+  </div>
+
+
+  <div class="w3-row-padding w3-margin-left w3-margin-right" style="margin-top:64px">
+      
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Loan_main.jpg" alt="Loan" style="width:100%">
+        <div class="w3-container">
+          <h6>Viet Loan<br/>Dao Thi, PhD</h6>
+          <p class="w3-opacity">Principal Investigator</p>
+          <p><button onclick="document.getElementById('Loan').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Loan" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Loan').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Loan_main.jpg" alt="Loan" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <!-- <h5 class="w3-center w3-padding w3-opacity">Viet Loan Dao Thi, PhD</h5> -->
+                <br/>
+                <p>After completing her dual studies in Biotechnology at the Technische Universität Berlin (Germany) and Dongseo University in Busan (South Korea), Loan received her PhD from the École Normale Supérieure in Lyon (France) where she trained with Prof. François-Loïc Cosset. She then pursued her interest in virology during two complementary postdoctoral phases in the labs of Prof. Darius Moradpour at the Centre Hospitalier Universitaire Vaudois in Lausanne (Switzerland) and Prof. Charles M. Rice at the Rockefeller University in New York (USA).</p>
+                <p>In 2018, Loan returned to Germany to join the Virology department at Heidelberg University Hospital as a Chica and Heinz Schaller Junior Research Group Leader.</p> <p>When not doing science, Loan likes to travel and hike.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Andrew.jpeg" alt="Andrew" style="width:100%">
+        <div class="w3-container">
+          <h6>Andrew<br/>Freistaedter, MSc</h6>
+          <p class="w3-opacity">Lab manager</p>
+          <p><button onclick="document.getElementById('Andrew').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Andrew" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Andrew').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Andrew.jpeg" alt="Andrew" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Andrew grew up in "The South" of the U.S., getting his Master's degree in North Carolina. As of 2017, he has been living in Germany, getting a feel for the European lifestyle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Huanting.jpg" alt="Huanting" style="width:100%">
+        <div class="w3-container">
+          <h6>Huanting<br/>Chi, MSc</h6>
+          <p class="w3-opacity">Postdoctoral fellow</p>
+          <p><button onclick="document.getElementById('Huanting').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Huanting" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Huanting').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Huanting.jpg" alt="Huanting" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Huanting received her BSc degree in Medicine from Soochow University in China. Then she completed her MSc program in Reproductive Sciences at the University of Edinburgh in Scotland. Huanting joined our lab in November 2020 for her PhD studies on the immunotherapy of chronic HEV infection, supported by the DZIF.</p>
+                <p>In her free time, Huanting likes hiking and playing badminton.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Jun-Gen.jpg" alt="Jun-Gen" style="width:100%">
+        <div class="w3-container">
+          <h6>Jun-Gen<br/>Hu, MSc</h6>
+          <p class="w3-opacity">PhD student</p>
+          <p><button onclick="document.getElementById('Jun-Gen').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Jun-Gen" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Jun-Gen').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Jun-Gen.jpg" alt="Jun-Gen" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Jun-Gen received his Bachelor and Master degrees in biology from Sichuan University, China.
+                Jun-Gen joined the lab in February 2021 for his PhD studying HEV protein trafficking in liver ECM-based PSC-HLCs culture systems. His stay is supported by the China Scholarship Council.</p>
+                <p>Outside the lab he enjoys cooking, biking, hiking and photography.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding w3-margin-left w3-margin-right" style="margin-top:64px">
+  
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Sarah.jpg" alt="Sarah" style="width:100%">
+        <div class="w3-container">
+          <h6>Sarah<br/>Prallet</h6>
+          <p class="w3-opacity">PhD student</p>
+          <p><button onclick="document.getElementById('Sarah').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Sarah" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Sarah').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Sarah.jpg" alt="Sarah" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>After her BSc studies in Biology, Biochemistry, and Biotechnologies in Lyon, Sarah completed her first year of MSc in Infectiology at Université Paris Diderot and her second year MSc in Molecular and Cellular Biology at the Université Paris Sorbonne. After her Master studies, she worked for almost 2 years at Fab’entech, a French biotech company.</p>
+                <p>Sarah joined the Dao Thi lab in September 2021 to study the innate immune response in HEV-infected intestinal cells.</p>
+                <p>She is passionate about mountains and outdoor sport, such as climbing, running, alpinism, and skiing. My state of mind is: <em>"Where there is a will, there is a way. Passion is the fuel behind every successful career!"</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Patrick.jpg" alt="Patrick" style="width:100%">
+        <div class="w3-container">
+          <h6>Patrick<br/>Bröscky</h6>
+          <p class="w3-opacity">PhD student</p>
+          <p><button onclick="document.getElementById('Patrick').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Patrick" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Patrick').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Patrick.jpg" alt="Patrick" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Patrick obtained his bachelor degree from the TU Darmstadt in microbiology. He obtained his master degree from the TU Darmstadt/MPI in Marburg and the LMU in Munich in bacteriology. For his PhD, he transitioned to virology and joined our lab in January 2023. Generously funded by SFB1129, he will investigate the trafficking of the HEV ORF3 protein in polarized cells.</p>
+                <p>Outside of the lab he enjoys reading, going to the gym and too many other hobbies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Paula.jpg" alt="Paula" style="width:100%">
+        <div class="w3-container">
+          <h6>Paula<br/>Jordan, MSc</h6>
+          <p class="w3-opacity">PhD student</p>
+          <p><button onclick="document.getElementById('Paula').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Paula" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Paula').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Paula.jpg" alt="Loan" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Paula obtained her Bachelor's and Master's degree in Biomedical Sciences in Marburg where she studied the Nipah Virus. In October 2024 she joined our lab for her PhD studies on the HEV life cycle.</p>
+                <p>Outside of the lab she enjoys photography, cooking and going to the gym.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Elif.jpg" alt="Elif" style="width:100%">
+        <div class="w3-container">
+          <h6>Elif<br/>Toprak, MSc</h6>
+          <p class="w3-opacity">PhD student</p>
+          <p><button onclick="document.getElementById('Elif').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Elif" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Elif').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Elif.jpg" alt="Loan" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Elif received her BSc degree in Molecular Biology and Genetics from Bilkent University, Ankara. She then completed her Master's degree in Developmental, Neural and Behavioral Biology in Göttingen, Germany, focusing her thesis work on neural differentiation of iPSCs. In October 2024, she joined Dao Thi's lab to work on HEV tropism and innate immune response with co-cultures of iPSC-derived immune and hepatocyte-like cells.</p>
+                <p>Outside the lab, she loves to take long walks in the forest, cuddle with her cat, and take up new hobbies from time to time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="w3-row-padding w3-margin-left w3-margin-right" style="margin-top:64px">
+  
+    <div class="w3-col l3 m6 w3-margin-bottom w3-padding-large">
+      <div class="w3-card-2">
+        <img src="img/Tobias.jpg" alt="Tobias" style="width:100%">
+        <div class="w3-container">
+          <h6>Tobias<br/>Walczuch, MSc</h6>
+          <p class="w3-opacity">PhD student</p>
+          <p><button onclick="document.getElementById('Tobias').style.display='block'" class="w3-theme w3-button w3-block w3-center"><i class="fa fa-info-circle"></i> About</button></p>
+          <div id="Tobias" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container w3-display-container w3-padding-64 w3-margin-left w3-margin-right">
+                <span onclick="document.getElementById('Tobias').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <img class="w3-grayscale-max w3-round-large" src="img/Tobias.jpg" alt="Tobias" style="width:100%; max-width:150px; display:block; margin-left:auto; margin-right:auto;">
+                <br/>
+                <p>Tobias earned his bachelor's degree in Biomedical Sciences from the University of Reutlingen, followed by a Master's in Molecular Biomedicine at the University of Münster. He performed his Master's thesis at the Institute of Human Genetics at the University Hospital Heidelberg, focusing on developing methods to analyze the MAGEL2 protein in human neurons derived from pluripotent stem cells.</p>
+                <p>He joined our group in February 2026 to set up a human intestinal organoid screening and evaluation platform for HEV and other enteric viruses.</p>
+                <p>Tobias enjoys outdoor activities, loves cooking, playing basketball, and pursues many other interests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+<!--
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">10+</span>
+    <br>Scientific papers
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5+</span>
+    <br>International collaborators
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5+</span>
+    <br>International collaborators
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+-->
+</div>
+
+<!-- Research Section -->
+<div class="w3-container w3-padding-128" id="research">
+  <h3 class="w3-center">OUR WORK</h3>
+  <div class="w3-container w3-row-padding w3-content">
+      <p>With about 20 million infections each year, hepatitis E virus (HEV) represents a significant global health burden.
+      Despite a growing awareness, the comprehension of this virus and its life cycle at the molecular level remains scarce. 
+      A contributing factor is the necessity to grow the virus in cell culture systems, which are usually based on aberrant cancer cells.</p>
+
+      <p>In order to overcome these limitations, we use embryonic or induced pluripotent stem cell (hESC/iPSC)-derived cell culture models, 
+      in particular stem-cell derived hepatocyte-like cells (HLCs; Figure 1).</p>
+
+      <div class="w3-container w3-center">
+          <img src="img/Diff_to_hlcs.png" style="max-width:100%; height: auto">
+          <div class="w3-container">
+              <center>
+                  <p align="left" style="width:75%"><small><strong>Figure 1:</strong> Differentiation of human pluripotent stem cells (embryonic or induced, hESC/iPSCs) to hepatocyte-like cells (HLCs; Wu & Dao Thi <i>et al.</i> 2018, Gastroenterology).</small></p>
+              </center>
+          </div>
+      </div>
+
+      <p>HEV is a positive-strand RNA, non-enveloped virus (nHEV), which gains a membranous host-derived envelope when budding from cells. 
+      In this form, the virus is called quasi-enveloped HEV (eHEV). While nHEV is ingested and shed into feces for fecal-oral 
+      transmission to another host, eHEV circulates in the blood of infected patients. The projects in our lab are geared towards 
+      studying the role of the quasi-envelope during different HEV life cycle steps, such as entry, innate immune sensing, assembly, 
+      secretion, in and from polarized cells (Figure 2). We further explore novel treatment options. Our studies are supported by a 
+      strong network of collaborations and state of the art technologies available on the outstanding campus environment of Heidelberg University.</p>
+
+      <div class="w3-container w3-center">
+          <img src="img/HEV_life_cycle.png" style="max-width:80%; height: auto">
+          <div class="w3-container">
+              <center>
+                  <p align="left" style="width:75%"><small><strong>Figure 2:</strong> HEV life cycle and transmission (adapted from Fu <i>et al.</i>, 2019). 
+                      (A) e/nHEV particles infect hepatocytes through their basolateral membrane. 
+                      (B) Replication of the HEV genome (green) mediated by HEV nonstructural proteins occurs in a yet uncharacterized cellular compartment. 
+                      (C) Subgenomic RNA is translated into ORF2 capsid protein (grey) and ORF3 protein (purple). The assembly site of infectious HEV particles is unknown. 
+                      (D) Progeny HEV particles bud into multivesicular buddies mediated by the interaction of ORF3 with the ESCRT machinery of the host cell. 
+                      (E) Basolaterally secreted eHEV particles are quasi-enveloped and circulate in this form in the bloodstream. 
+                      The envelope protects eHEV particles from neutralizing anti-ORF2 Abs. 
+                      (F) Apically secreted particles bud as eHEV particles and are then matured into nHEV particles. While exact modes of nHEV entry (A) are unknown, 
+                      (G) eHEV particles enter through clathrin-dependent endocytosis. Cell-to-cell transmission or 
+                      (H) transmission between neighboring apical domains has not been described yet.</small></p>
+              </center>
+          </div>
+      </div>
+
+    <h5 class="w3-center">Project examples for further details:</h5>
+    <ul>
+        <li><a href="https://www.sfb1129.de/02-projects/project-17/project-17-3rd-funding-perriod/" target="_blank" class="w3-hover-text-purple">Hepatitis E virus trafficking in polarized human pluripotent stem cell-derived hepatocyte-like systems</a></li>
+        <li><a href="http://www.trr179.de/en/science/project-overview/tp22/u/28/?friendly_url=tp22&id=28" target="_blank" class="w3-hover-text-purple">Impact of the enteric stage of hepatitis A virus and hepatitis E virus on the outcome of liver infection</a></li>
+
+  </div>
+  <div class="w3-container w3-padding-32">
+    <h4 class="w3-center">Our work is funded by generous grants from different sources</h4>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-third">
+          <p></p>
+      </div>
+      <div class="w3-third">
+        <a target="_blank" rel="noopener noreferrer" href="http://www.chs-stiftung.org/"><img src="img/CHSF.webp" alt="CHS foundation" style="max-width:450px; height: auto" class="responsive"></a>
+      </div>
+      <div class="w3-third">
+          <p></p>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-quarter">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.bwstiftung.de/de/"><img src="img/BWStiftung.png" alt="BWS" style="max-width:250px; height: auto"></a>
+      </div>
+      <div class="w3-quarter">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.heidelberg-dzif.de/"><img src="img/DZIF_Logo_670.jpg" alt="DZIF" style="max-width:150px; height: auto"></a>
+      </div>
+      <div class="w3-quarter">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.sfb1129.de/"><img src="img/sfb1129_logo.jpeg" alt="SFB1129" style="max-width:150px; height: auto"></a>
+      </div>
+      <div class="w3-quarter">
+        <a target="_blank" rel="noopener noreferrer" href="http://www.trr179.de/en/"><img src="img/trr179_logo_0.jpg" alt="TRR179" style="max-width:150px; height: auto"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Open positions Section -->
+<div class="w3-container w3-padding-64 w3-center w3-light-gray" id="openpositions">
+  <h3>OPEN POSITIONS</h3>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-border" style="margin-top:32px">
+ <!--     <div class="w3-bar">
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Postdoc')">Post-doc</button>
+      </div>
+      <div id="Postdoc" class="w3-container city w3-animate-opacity">
+        <p>Post-doc position available to study determinants of tissue and species tropism of HEV.</p>
+        <p>For details please refer to the <a target="_blank" href="files/PostDoc_Ad.pdf">job ad</a>.</p>
+      </div> -->
+      <div class="w3-bar">
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'NoPositions')">Currently no open positions</button>
+      </div>
+      <div id="NoPositions" class="w3-container city w3-animate-opacity">
+        <p>Please check back later for future opportunities.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Publications Section -->
+<div class="w3-container w3-padding-64" id="publications">
+  <h3 class="w3-center">SELECTED PUBLICATIONS</h3>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row-padding" style="margin-top:32px">
+      <ul>
+        <h5 class="w3-center">2025</h5>
+          <li><strong>Mehnert AK</strong>, Stegmaier S, Ramirez Alvarez C, <strong>Toprak E</strong>, Magalhães VG, Siebenkotten C, <strong>Hu J</strong>, Costa AL, Kirrmaier D, Knop M, Wu X, Tubiana T, Herrmann C, Binder M, <strong>Dao Thi VL.</strong> (2025).
+              The hepatitis E virus capsid protein ORF2 counteracts cell-intrinsic antiviral responses to enable persistent replication in cell culture. PLoS Pathog. 21(9):e1013516
+              <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/40982567/">Pubmed</a></li>  
+          <li><strong>Fu R</strong>, <strong>Jordan P</strong>, <strong>Engels Z</strong>, <strong>Weihs JA</strong>, <strong>Mürle J</strong>, <strong>Chi H</strong>, Burbano de Lara S, Helm B, Klöhn M, <strong>Hu J</strong>, <strong>Freistaedter A</strong>, Boettler T, Binder M, Klingmüller U, Steinmann E, Lozach PY, Tubiana T, Lemon SM, <strong>Dao Thi VL.</strong> (2025).
+              Integrin beta 1 facilitates non-enveloped hepatitis E virus cell entry through the recycling endosome. Nat Commun. 16(1):5403
+              <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/40571699/">Pubmed</a></li>
+          <li>Ssebyatika G, Dinkelborg K, Ströh LJ, Hinte F, Corneillie L, Hueffner L, Guzman EM, Nankya PL, Plückebaum N, Fehlau L, Garn J, Meyer N, <strong>Prallet S</strong>, <strong>Mehnert AK</strong>, Kraft ARM, Verhoye L, Jacobsen C, Steinmann E, Wedemeyer H, Viejo-Borbolla A, <strong>Dao Thi VL</strong>, Pietschmann T, Lütgehetmann M, Meuleman P, Dandri M, Krey T, Behrendt P. (2025).
+              Broadly neutralizing antibodies isolated from HEV convalescents confer protective effects in human liver-chimeric mice. Nat Commun. 16(1):1995
+              <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/40011441/">Pubmed</a></li>  
+        
+        <h5 class="w3-center">2024</h5>
+          <li><strong>Chi H</strong>, Qu B, Prawira A, Richardt T, <strong>Maurer L</strong>, <strong>Fu R</strong>, Lempp FA, Zhang Z, Grimm D, Wu X, Urban S, <strong>Dao Thi VL</strong> (2024).
+            An hepatitis B and D virus infection model using human pluripotent stem cell-derived hepatocytes. EMBO Rep. 25(10):4311-4336
+            <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39232200/">Pubmed</a></li>
+
+        <li>Klöhn M, Burkard T, Janzen J, Haase JA, Gömer A, <strong>Fu R</strong>, Ssebyatika G, Nocke MK, Brown RJP, Krey T, <strong>Dao Thi VL</strong>, Kinast V, Brüggemann Y, Todt D, Steinmann E. (2024).
+              Targeting cellular cathepsins inhibits hepatitis E virus entry. Hepatology 80(5):1239-1251
+              <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/38728662/">Pubmed</a></li>
+
+          <h5 class="w3-center">2023</h5>
+          <li>Csernalabics B, Marinescu MS, Maurer L, Kelsch L, Werner J, Baumann K, Zoldan K, Panning M, Reuken P, Bruns T, Bengsch B, Neumann-Haefelin C, Hofmann M, Thimme R, <strong>Dao Thi VL</strong>, Boettler T. (2023).
+              Efficient formation and maintenance of humoral and CD4 T-cell immunity targeting the viral capsid in acute-resolving hepatitis E infection. J Hepatol. 80(4):564-575 
+              <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/38154741/">Pubmed</a></li>
+          <li> Schrader JA, Burkard TL, Brüggemann Y, Goemer A, Meister TL, <strong>Fu R</strong>, <strong>Mehnert AK</strong>, <strong>Dao Thi VL</strong>, Behrendt P, Durantel D, Broering R, Vondran FWR, Todt D, Kinast V, Steinmann E. (2023).
+              EGF receptor modulates HEV entry in human hepatocytes. Hepatology. 77(6):2104-2117 
+              <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/36745934/">Pubmed</a></li>
+
+          <h5 class="w3-center">2022</h5>
+          <li><strong>Maurer L</strong>, El Andari J, Rapti K, <strong>Spreyer L</strong>, Steinmann E, Grimm D, <strong>Dao Thi VL</strong> (2022).
+              Induction of Hepatitis E virus anti-ORF3 antibodies from systemic administration of a muscle-specific adeno-associated virus (AAV) vector. Viruses 14(2), 266
+              <a target="_blank" rel="noopener noreferrer" href="https://www.mdpi.com/1999-4915/14/2/266">Viruses</a></li>
+
+          <h5 class="w3-center">2021</h5>
+          <li><strong>Zhang C</strong>, <strong>Freistaedter A</strong>, Schmelas C, Gunkel M, <strong>Dao Thi VL</strong>, Grimm D (2021).
+              An RNA interference/adeno-associated virus vector-based combinatorial gene therapy approach against Hepatitis E virus. Hepatol Commun. 6(4):878-888
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/34719133">Pubmed</a></li>
+          <li><strong>Bove G</strong>, <strong>Mehnert A-K</strong>, <strong>Dao Thi VL</strong> (2021).
+              Chapter 7, iPSCs for modeling hepatotropic pathogen infections, Editor: Alexander Birbrair, In Advances in Stem Cell Biology, iPSCs for Studying Infectious Diseases, Academic Press, Volume 8, p. 149-213.
+              <a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/B9780128238080000134">Science Direct</a></li>
+
+          <li>Herbst K, Meurer M, Kirrmaier D,  Anders S, Knop M, <strong>Dao Thi VL</strong> (2021).
+              Colorimetric RT-LAMP and LAMP-sequencing for Detecting SARS-CoV-2 RNA in Clinical Samples. Bio Protoc. 11(6):e3964
+              <a target="_blank" rel="noopener noreferrer" href="https://bio-protocol.org/e3964">Bio Protoc</a></li>
+
+          <h5 class="w3-center">2020</h5>
+          <li><strong>Dao Thi VL</strong>, Herbst K, Boerner K, Meurer M, Kremer LPM, Kirrmaier D, <strong>Freistaedter A</strong>, Papagiannidis D, Galmozzi C, Stanifer ML, Boulant S, Klein S, Chlanda P, Khalid D, Miranda IB, Schnitzler P, Kräusslich H-G, Knop M, Anders S (2020).
+              A colorimetric RT-LAMP assay and LAMP-sequencing for detecting SARS-CoV-2 RNA in clinical samples. Science Translational Medicine. 12:eabc7075 
+              <a target="_blank" rel="noopener noreferrer" href="https://stm.sciencemag.org/content/early/2020/07/27/scitranslmed.abc7075/tab-article-info">Sci Trans Med</a></li>
+
+          <li>Klein S, Müller TG, Khalid D, Sonntag-Buck V, Heuser A-M, Glass B, Meurer M, Morales I, Schillak A, <strong>Freistaedter A</strong>, Ambiel I, Winter SL, Zimmermann L, Naumoska T, Bubeck F,  Kirrmaier D, Ullrich S, Barreto Miranda I, Anders S, Grimm D, Schnitzler P, Knop M, Kräusslich H-G, <strong>Dao Thi VL</strong>, Börner K, Chlanda P (2020).
+              SARS-CoV-2 RNA Extraction Using Magnetic Beads for Rapid Large-Scale Testing by RT-qPCR and RT-LAMP. Viruses. 12:863 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.mdpi.com/1999-4915/12/8/863">Viruses</a></li>
+
+          <li><strong>Dao Thi VL</strong>, Wu X, Belote RL, Andreo U, Takacs CN, Fernandez JP, Vale-Silva LA, Prallet S, <strong>Decker CC</strong>, <strong>Fu RM,</strong> Qu B, Uryu K, Molina H, Saeed M, Steinmann E, Urban S, Singaraja RR, Schneider WM, Simon SM, Rice CM (2020).
+              Stem cell-derived polarized hepatocytes. Nature communications. 11:1677 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.nature.com/articles/s41467-020-15337-2">Nat Comm</a></li>
+
+          <h5 class="w3-center">2019</h5>
+          <li><strong>Fu RM</strong>, <strong>Decker CC</strong>, <strong>Dao Thi VL</strong> (2019).
+              Cell Culture Models for Hepatitis E Virus. Viruses. 11:608 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.mdpi.com/1999-4915/11/7/608">Viruses</a></li>
+          <li>Wang J,Qu B,Zhang F,<strong>Zhang C</strong>, Deng W, <strong>Dao Thi VL</strong>, Xia Y (2019).
+              Stem Cell-Derived Hepatocyte-Like Cells as Model for Viral Hepatitis Research. Stem Cells International. 2019:9605252 
+              <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1155/2019/9605252">Stem Cells International</a></li>
+
+          <h5 class="w3-center">2018</h5>
+          <li><strong>Dao Thi VL</strong>, Wu X, Rice CM (2018).
+              Stem cell-derived culture models of hepatitis E virus infection. Cold Spring Harbor Perspectives in Medicine. a031799 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/29686039">Pubmed</a></li>
+          <li>Wu X*, <strong>Dao Thi VL</strong>*, Liu P, Takacs CN, Xiang K, Andrus L, Gouttenoire J, Moradpour D, Rice CM (2018).
+              Pan-Genotype Hepatitis E Virus Replication in Stem Cell-Derived Hepatocellular Systems. Gastroenterology. 154:663-674 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/29277559">Pubmed</a></li>
+          <li>Todt D, Moeller N, Praditya D, Kinast V, Friesland M, Engelmann M, Verhoye L, Sayed IM, Behrendt P, <strong>Dao Thi VL</strong> <i>et al.</i> (2018).
+              The natural compound silvestrol inhibits hepatitis E virus (HEV) replication <i>in vitro</i> and <i>in vivo</i>. Antiviral Research. 157:151-158 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/30036559">Pubmed</a></li>
+          <li>Knegendorf L, Drave SA, <strong>Dao Thi VL</strong>, Debing Y, Brown RJP, Vondran FWR, Resner K, Friesland M, Khera T, Engelmann M <i>et al.</i> (2018).
+              Hepatitis E virus replication and interferon responses in human placental cells. Hepatology Communications. 2:173-187 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/29249360">Pubmed</a></li>
+          <li>Wu X, <strong>Dao Thi VL</strong>, Huang Y, Billerbeck E, Saha D, Hoffmann H-H, Wang Y, Vale Silva LA, Sarbanes S, Sun T <i>et al.</i> (2018).
+              Intrinsic immunity shapes viral resistance of stem cells. Cell. 172:423-438 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/29249360">Pubmed</a></li>
+          <li>Chung H, Calis JJA, Wu X, Sun T, Yu Y, Sarbanes SL, <strong>Dao Thi VL</strong>, Shilvock AR, Hoffmann HH, Rosenberg BR <i>et al.</i> (2018).
+              Human <i>ADAR1</i> prevents endogenous RNA from triggering translational shutdown. Cell. 172:811-824 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/29395325">Pubmed</a></li>
+
+          <h5 class="w3-center">Earlier papers</h5>
+          <li>Takacs CN, Andreo U, <strong>Dao Thi VL</strong>, Wu X, Gleason CE, Itano MS, Spitz-Becker GS, Belote RL, Hedin BR, Scull MA <i>et al.</i> (2017).
+              Differential regulation of lipoprotein and hepatitis C virus secretion by Rab1b. Cell Reports. 21:431-441
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/29020629">Pubmed</a></li>
+          <li><strong>Dao Thi VL</strong>, Debing Y, Wu X, Rice CM, Neyts J, Moradpour D, Gouttenoire J (2016).
+              Sofosbuvir inhibits hepatitis E virus replication <i>in vitro</i> and results in an additive effect when combined with ribavirin. Gastroenterology. 150:82-85 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/26408347">Pubmed</a></li>
+          <li>Hiroz P, Gouttenoire J, <strong>Dao Thi VL</strong>, Doerig C, Moradpour D, Sahli R, Telenti A (2013).
+              Mise à jour sur l’hépatite E. Revue Médicale Suisse. 9:1594-1598 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.revmed.ch/RMS/2013/RMS-N-396/Mise-a-jour-sur-l-hepatite-E">Journal website</a></li>
+          <li>Molina-Jimenez F, Benedicto I, <strong>Dao Thi VL</strong> Gondar V, Lavillette D, Marin JJ, Briz O, Moreno-Otero R, Aldabe R, Baumert TF, Cosset FL, Lopez-Cabrera M, Majano PL (2012).
+              Matrigel-embedded 3D culture of Huh-7 cells as a hepatocyte-like polarized system to study hepatitis C virus cycle. Virology. 425:31-39 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/22280897">Pubmed</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- News Section -->
+<div class="w3-container w3-padding-64 w3-center w3-light-gray" id="news">
+  <h3>LAB NEWS</h3>
+  
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">April 2026:</span> Sarah's paper is <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1126/sciadv.aeb2333">online</a></p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">March 2026:</span> Jun-Gen's paper is <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1136/gutjnl-2025-336714">online</a></p>
+            <p>Press releases in <a target="_blank" rel="noopener noreferrer" href="https://www.dzif.de/en/promising-active-substance-against-hepatitis-e-identified">English</a> and <a target="_blank" rel="noopener noreferrer" href="https://news.rub.de/wissenschaft/2026-03-20-virologie-vielversprechender-wirkstoff-gegen-hepatitis-e-identifiziert">German</a></p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">February 2026:</span> <strong>Tobias</strong> joined the lab as a PhD student</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/Huantings_defense.jpg" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">July 2025:</span> <strong>Huanting</strong> is our newest PhD graduate. Congratulations on a brilliant defense, Doctor Chi!</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">September 2025:</span> Ann-Kathrin’s paper is <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1371/journal.ppat.1013516">online</a></p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/Ann-Kathrins_defense.png" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">July 2025:</span> <strong>Ann-Kathrin</strong> has brilliantly defended her PhD thesis — our heartfelt congratulations, Doctor Mehnert!</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+    
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">June 2025:</span> Rebecca’s paper is <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1038/s41467-025-61071-y">online</a></p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+  <div id="BASFFirmencup2025" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+    <div class="w3-display-container mySlides">
+      <img src="img/news/June25_BASF_Firmencup/Picture1.jpg" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">June 2025:</span> Thanks to Sarah, we participated in the BASF Firmencup again. Congrats to all the runners on finishing the race!
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/June25_BASF_Firmencup/Picture2.jpg" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">June 2025:</span> Thanks to Sarah, we participated in the BASF Firmencup again. Congrats to all the runners on finishing the race!
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/June25_BASF_Firmencup/Picture3.jpg" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">June 2025:</span> Thanks to Sarah, we participated in the BASF Firmencup again. Congrats to all the runners on finishing the race!
+      </div>
+    </div>
+    
+    <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow14)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow14)">&#10095;</button>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1, slideshow14)"></span>
+      <span class="dot" onclick="currentSlide(2, slideshow14)"></span>
+      <span class="dot" onclick="currentSlide(3, slideshow14)"></span>
+    </div>
+</div>
+  
+<br/>
+<div id="LabHike2025" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+  <div class="w3-display-container mySlides">
+    <img src="img/news/April25_Lab_hike/Lab_hike_1.jpg" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">April 2025:</span> Lab hike in the Wolf Canyon-organised by Niclas
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/news/April25_Lab_hike/Lab_hike_2.jpg" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">April 2025:</span> Lab hike in the Wolf Canyon-organised by Niclas
+    </div>
+  </div>
+  
+  <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow13)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow13)">&#10095;</button>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, slideshow13)"></span>
+    <span class="dot" onclick="currentSlide(2, slideshow13)"></span>
+  </div>
+</div>
+  
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">November 2024:</span> Congratulations to the brilliant <strong>Dr. Rebecca Fu</strong> on successfully defending her PhD dissertation</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div id="LaserTag2024" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+    <div class="w3-display-container mySlides">
+      <img src="img/news/Oct_24_Lasertag/Lasertag_1.png" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">October 2024:</span> Laser  tag fun at our latest lab outing
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/Oct_24_Lasertag/Lasertag_2.png" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">October 2024:</span> Laser  tag fun at our latest lab outing
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img/news/Oct_24_Lasertag/Lasertag_3.png" style="width:100%">
+      <div class="w3-large w3-container w3-padding-16 w3-black">
+        <span class="w3-text-teal">October 2024:</span> Laser  tag fun at our latest lab outing
+      </div>
+    </div>
+    
+    <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow12)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow12)">&#10095;</button>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1, slideshow12)"></span>
+      <span class="dot" onclick="currentSlide(2, slideshow12)"></span>
+      <span class="dot" onclick="currentSlide(3, slideshow12)"></span>
+    </div>
+    </div>
+    
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">October 2024:</span> <strong>Elif</strong> and <strong>Paula</strong> joined the lab as PhD students</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">September 2024:</span> Huanting's paper is <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1038/s44319-024-00236-0">online</a></p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+  <div class="w3-container w3-row-padding w3-content">
+    <div class="w3-row">
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">August 2024:</span> <strong>Niclas</strong> Meier started his Master thesis in the lab</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">July 2024:</span> Congrats to <strong>Charlotte</strong> on the brilliant defense of her thesis</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div id="Sarah2024" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_2024_Sarah/Sarah2024_1.png" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2024:</span> Congrats to Sarah for a Young Scientist Award at the DZIF Translational Hepatitis Meeting
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_2024_Sarah/Sarah2024_2.png" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2024:</span> Congrats to Sarah for a Young Scientist Award at the DZIF Translational Hepatitis Meeting
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow10)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow10)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow10)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow10)"></span>
+</div>
+</div>
+  
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/GfV_2023.png" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">March 2024:</span> Brilliant oral presentation by <strong>Ann-Kathrin</strong> at the GfV meeting in Vienna</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+
+<br/>
+<div id="Bangladesh2023" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+  <div class="w3-display-container mySlides">
+    <img src="img/news/Oct_23_Bangladesh/Bangladesh_1.png" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">October 2023:</span> Sarah visits the lab of Dr. Senjuti Saha at the Child and Health Research Foundation in Dhaka, Bangladesh, with generous support from the GfV and TRR179
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/news/Oct_23_Bangladesh/Bangladesh_2.png" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">October 2023:</span> Sarah visits the lab of Dr. Senjuti Saha at the Child and Health Research Foundation in Dhaka, Bangladesh, with generous support from the GfV and TRR179
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/news/Oct_23_Bangladesh/Bangladesh_3.png" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">October 2023:</span> Sarah visits the lab of Dr. Senjuti Saha at the Child and Health Research Foundation in Dhaka, Bangladesh, with generous support from the GfV and TRR179
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/news/Oct_23_Bangladesh/Bangladesh_4.png" style="width:100%">
+    <div class="w3-large w3-container w3-padding-16 w3-black">
+      <span class="w3-text-teal">October 2023:</span> Sarah visits the lab of Dr. Senjuti Saha at the Child and Health Research Foundation in Dhaka, Bangladesh, with generous support from the GfV and TRR179
+    </div>
+  </div>
+  
+  <button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow11)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow11)">&#10095;</button>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, slideshow11)"></span>
+    <span class="dot" onclick="currentSlide(2, slideshow11)"></span>
+    <span class="dot" onclick="currentSlide(3, slideshow11)"></span>
+    <span class="dot" onclick="currentSlide(4, slideshow11)"></span>
+  </div>
+  </div>
+  
+  <br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/EASL_2023.png" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">June 2023:</span> With Rebecca and JunGen (and Clara) at the EASL in Vienna</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+
+<br/>
+<div id="Bouldering" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_3.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_4.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_Bouldering/Bouldering_5.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Bouldering with the lab!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow9)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow9)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow9)"></span>
+  <span class="dot" onclick="currentSlide(5, slideshow9)"></span>
+</div>
+</div>
+
+<br/>
+<div id="ECV_Poland" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Group.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> At the European Congress of Virology in Gdansk, Poland. Big congrats to all presenters for winning travel grants!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Ann-Kathrin.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Ann-Kathrin presenting her work model on innate immune responses to HEV infections.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Jun-Gen.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Jun-Gen presenting his ORF2 project.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/May_23_ECV_Poland/Rebecca.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">May 2023:</span> Rebecca presenting her work on HEV cell entry.
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow8)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow8)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow8)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow8)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow8)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow8)"></span>
+</div>
+</div>
+
+<br/>
+<div id="SoV_Ulm" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/March_23_SoV_Ulm/Group.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">March 2023:</span> At the Annual Meeting of the Society of Virology in Ulm.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/March_23_SoV_Ulm/Huanting.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">March 2023:</span> Huanting presenting her work on HDV in the big auditorium. Congrats for winning a travel grant!
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/March_23_SoV_Ulm/Zoe.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">March 2023:</span> Zoe presenting our HEV cell entry project.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/March_23_SoV_Ulm/Jun-Gen.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">March 2023:</span> Jun-Gen presenting his work on the HEV capsid protein ORF2.
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow7)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow7)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow7)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow7)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow7)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow7)"></span>
+</div>
+</div>
+ 
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">January 2023:</span> <strong>Patrick</strong> joined the lab as a PhD student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-award w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Sept 2022:</span> Congrats to <strong>Jun-Gen</strong> for being accepted at the EASL Basic Science School: Precision Cut Liver Slices and Liver Organoids</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">July 2022:</span> <strong>Zoé</strong> joined the lab as an MSc student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div id="HCVFlavi" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/HCVFlavi/HCVFlavi_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">July 2022:</span> With Rebecca, Jun-Gen, and Ann-Kathrin at the HCVFlavi meeting. Eating eclairs with little viruses at the social event, yummy! 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/HCVFlavi/HCVFlavi_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">July 2022:</span> Congrats to Ann-Kathrin for winning a best pitch talk award for her brilliant presentation at the HCVFlavi meeting. 
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow6)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow6)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow6)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow6)"></span> 
+</div>
+</div>
+
+<div id="ILC_London" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/ILC_London/ILC_London_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2022:</span> With Huanting and Sarah at the ILC in London 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/ILC_London/ILC_London_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2022:</span> Congrats to Sarah for winning a young investigator bursary and presenting her poster at the ILC in London!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow5)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow5)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+</div>
+</div>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">May 2022:</span> <strong>Valentina</strong> joined the lab as an MSc student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Jan 2022:</span> Lars' paper is <a target="_blank" rel="noopener noreferrer" href="https://www.mdpi.com/1999-4915/14/2/266">online</a></p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Oct 2021:</span> Cindy's paper is <a target="_blank" rel="noopener noreferrer" href="https://www.ncbi.nlm.nih.gov/pubmed/34719133">online</a></p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Sept 2021:</span> <strong>Sarah</strong> joined the lab as a PhD student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">June 2021:</span> <strong>Ann-Kathrin</strong> and <strong>Guglielmo</strong>'s book chapter is <a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/B9780128238080000134">online</a></p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Feb 2021:</span> <strong>Jun-Gen</strong> joined the lab as a PhD student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Nov 2020:</span> <strong>Huanting</strong> joined the lab as a PhD student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">July 2020:</span> Our contributions to overcome SARS CoV2 diagnostic shortages are online in <a target="_blank" rel="noopener noreferrer" href="https://stm.sciencemag.org/content/early/2020/07/27/scitranslmed.abc7075/tab-article-info">Sci Trans Med</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.mdpi.com/1999-4915/12/8/863">Viruses</a></p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">April 2020:</span> <strong>Ann-Kathrin</strong> joined the lab as a PhD student</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">April 2020:</span> Our paper in Nature Communications is <a target="_blank" rel="noopener noreferrer" href="https://www.nature.com/articles/s41467-020-15337-2">online</a></p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Feb 2020:</span> <strong>Linh</strong> started her Master thesis in the lab</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<div id="Xmas19" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/Christmas_dinner2.jpeg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Jan 2020:</span> Christmas dinner
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/Christmas_dinner1.jpeg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Jan 2020:</span> Christmas dinner
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow4)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow4)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow4)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow4)"></span> 
+</div>
+</div>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">Nov 2019:</span> <strong>Guglielmo</strong> started his internship in the lab</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    <div class="w3-col w3-container s12 m10 l8">
+      <div class="w3-card-2 w3-white">
+        <i class="fa fa-file-alt w3-margin w3-text-theme" style="font-size:100px"></i>
+        <div class="w3-container w3-large w3-black">
+          <p><span class="w3-text-teal">July 2019:</span> <strong>Rebecca</strong> and <strong>Charlotte's</strong> review paper accepted at Viruses</p>
+        </div>
+      </div>
+    <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<div id="BASF" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/BASF_Firmencup/BASF_1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2019:</span> The lab participated in the BASF Firmencup race 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/BASF_Firmencup/BASF_2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2019:</span> The lab participated in the BASF Firmencup race 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/BASF_Firmencup/BASF_3.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">June 2019:</span> The lab participated in the BASF Firmencup race 
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow3)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow3)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow3)"></span> 
+</div>
+</div>
+
+</br>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">May 2019:</span> <strong>Lars</strong> started his MD thesis in the lab</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<div id="1stEssen" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/1stEssen_meeting.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Feb 2019:</span> The lab attended the 1st Essen Hepatitis E meeting 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/1stEssen_Cindys_talk.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Feb 2019:</span> Cindy gave a talk at the 1st Essen Hepatitis E meeting
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow2)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow2)">&#10095;</button>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+</div>
+</div>
+
+</br>
+
+<div class="w3-container w3-row-padding w3-content">
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2">
+          <img src="img/news/Group_pic.jpg" alt="" style="width:100%">
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">Feb 2019:</span> First group photo</p> 
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+
+  </br>
+
+  <div class="w3-row">
+    <div class="w3-col w3-container s0 m1 l2"></div>
+      <div class="w3-col w3-container s12 m10 l8">
+        <div class="w3-card-2 w3-white">
+          <i class="fa fa-graduation-cap w3-margin w3-text-theme" style="font-size:100px"></i>
+          <div class="w3-container w3-large w3-black">
+            <p><span class="w3-text-teal">Feb 2019:</span> <strong>Charlotte</strong> and <strong>Rebecca</strong> joined the lab as our first PhD students</p>
+          </div>
+        </div>
+      <div class="w3-col w3-container s0 m1 l2"></div>
+    </div>
+  </div>
+</div>
+
+<div id="Xmas18" class="w3-content w3-display-container" style="max-width:600px;position:relative;margin-top:32px;margin-bottom:32px">
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/xmas_dinner1.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Dec 2018:</span> First Christmas dinner
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/xmas_dinner2.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Dec 2018:</span> First Christmas dinner
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/xmas_dinner3.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Dec 2018:</span> First Christmas dinner
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/news/xmas_dinner4.jpg" style="width:100%">
+  <div class="w3-large w3-container w3-padding-16 w3-black">
+    <span class="w3-text-teal">Dec 2018:</span> First Christmas dinner
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusSlides(-1, slideshow1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusSlides(1, slideshow1)">&#10095;</button>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-128 w3-center" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <div class="w3-center w3-padding-large">
+    <img src="img/loan.jpg" class="w3-circle w3-image" alt="Loan" width="150px">
+  </div>
+  <div class="w3-row-padding" style="margin-top:12px">
+    <p class="w3-large">Viet Loan Dao Thi, PhD
+    </br>Junior Group Leader</p>
+    <i class="fa fa-map-marker w3-xlarge w3-margin-right"></i>
+    <p>Center for Integrative Infectious Disease Research (CIID)</br>
+    University Hospital Heidelberg</br>
+    Im Neuenheimer Feld 344</br>
+    D-69120 Heidelberg, Germany</p>
+    <p><i class="fa fa-phone w3-xlarge w3-margin-right"></i> +49 (0) 6221 567 865</p>
+    <p><i class="fa fa-envelope w3-xlarge w3-margin-right"></i> VietLoan.DaoThi {at} med.uni-heidelberg.de</p>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+<!--
+    <i class="fab fa-facebook w3-hover-text-indigo"></i>
+    <i class="fab fa-flickr w3-hover-text-red"></i>
+    <i class="fab fa-instagram w3-hover-text-purple"></i>
+    <i class="fab fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fab fa-linkedin w3-hover-text-indigo"></i>
+-->
+  </div>
+  <br />
+  <p>&copy; Dao Thi Lab 2018-2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Hosted on <a href="https://pages.github.com/" target="_blank" class="w3-hover-text-purple">GitHub Pages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Slideshows
+var slideshow1 = document.getElementById("Xmas18");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("1stEssen");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.getElementById("BASF");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+var slideshow4 = document.getElementById("Xmas19");
+slideshow4.currentSlideIndex = 1;
+showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+var slideshow5 = document.getElementById("ILC_London");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+var slideshow6 = document.getElementById("HCVFlavi");
+slideshow6.currentSlideIndex = 1;
+showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+var slideshow7 = document.getElementById("SoV_Ulm");
+slideshow7.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow7);
+
+var slideshow8 = document.getElementById("ECV_Poland");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
+var slideshow9 = document.getElementById("Bouldering");
+slideshow9.currentSlideIndex = 1;
+showSlides(slideshow9.currentSlideIndex, slideshow9);
+
+var slideshow10 = document.getElementById("Sarah2024");
+slideshow10.currentSlideIndex = 1;
+showSlides(slideshow10.currentSlideIndex, slideshow10);
+
+var slideshow11 = document.getElementById("Bangladesh2023");
+slideshow11.currentSlideIndex = 1;
+showSlides(slideshow11.currentSlideIndex, slideshow11);
+
+var slideshow12 = document.getElementById("LaserTag2024");
+slideshow12.currentSlideIndex = 1;
+showSlides(slideshow12.currentSlideIndex, slideshow12);
+
+var slideshow13 = document.getElementById("LabHike2025");
+slideshow13.currentSlideIndex = 1;
+showSlides(slideshow13.currentSlideIndex, slideshow13);
+
+var slideshow14 = document.getElementById("BASFFirmencup2025");
+slideshow14.currentSlideIndex = 1;
+showSlides(slideshow14.currentSlideIndex, slideshow14);
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+<script src="js/icosahedron.js"></script>
+<!-- Smooth scrolling to anchors -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
