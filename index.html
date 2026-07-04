@@ -320,14 +320,6 @@ h1,h2,h3,h4,h5,h6{font-family:'Inter',sans-serif;font-weight:700;line-height:1.3
     <!-- Row 2 -->
     <div class="team-grid" style="margin-bottom:24px">
       <div class="team-card">
-        <img class="team-card__img" src="img/Sarah.jpg" alt="Sarah Prallet">
-        <div class="team-card__body">
-          <div class="team-card__name">Sarah Prallet</div>
-          <div class="team-card__role">PhD student</div>
-          <button class="team-card__btn" onclick="openModal('modal-Sarah')"><i class="fa fa-user"></i> About</button>
-        </div>
-      </div>
-      <div class="team-card">
         <img class="team-card__img" src="img/Patrick.jpg" alt="Patrick Bröscky">
         <div class="team-card__body">
           <div class="team-card__name">Patrick Br&#246;scky</div>
@@ -351,15 +343,23 @@ h1,h2,h3,h4,h5,h6{font-family:'Inter',sans-serif;font-weight:700;line-height:1.3
           <button class="team-card__btn" onclick="openModal('modal-Elif')"><i class="fa fa-user"></i> About</button>
         </div>
       </div>
-    </div>
-    <!-- Row 3 -->
-    <div class="team-grid">
       <div class="team-card">
         <img class="team-card__img" src="img/Tobias.jpg" alt="Tobias Walczuch">
         <div class="team-card__body">
           <div class="team-card__name">Tobias Walczuch, MSc</div>
           <div class="team-card__role">PhD student</div>
           <button class="team-card__btn" onclick="openModal('modal-Tobias')"><i class="fa fa-user"></i> About</button>
+        </div>
+      </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-card__img" src="img/Eleni.jpg" alt="Eleni Loukou">
+        <div class="team-card__body">
+          <div class="team-card__name">Eleni Loukou, MSc</div>
+          <div class="team-card__role">PhD student</div>
+          <button class="team-card__btn" onclick="openModal('modal-Eleni')"><i class="fa fa-user"></i> About</button>
         </div>
       </div>
     </div>
@@ -413,19 +413,6 @@ h1,h2,h3,h4,h5,h6{font-family:'Inter',sans-serif;font-weight:700;line-height:1.3
     </div>
   </div>
 </div>
-<div class="modal-overlay" id="modal-Sarah" onclick="closeModalOnBg(event,'modal-Sarah')">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeModal('modal-Sarah')">&times;</button>
-    <img class="modal-portrait" src="img/Sarah.jpg" alt="Sarah Prallet">
-    <h3 class="modal-name">Sarah Prallet</h3>
-    <div class="modal-role">PhD student</div>
-    <div class="modal-bio">
-      <p>After her BSc studies in Biology, Biochemistry, and Biotechnologies in Lyon, Sarah completed her first year of MSc in Infectiology at Universit&#233; Paris Diderot and her second year MSc in Molecular and Cellular Biology at the Universit&#233; Paris Sorbonne. After her Master studies, she worked for almost 2 years at Fab&#8217;entech, a French biotech company.</p>
-      <p>Sarah joined the Dao Thi lab in September 2021 to study the innate immune response in HEV-infected intestinal cells.</p>
-      <p>She is passionate about mountains and outdoor sport, such as climbing, running, alpinism, and skiing. <em>&#8220;Where there is a will, there is a way. Passion is the fuel behind every successful career!&#8221;</em></p>
-    </div>
-  </div>
-</div>
 <div class="modal-overlay" id="modal-Patrick" onclick="closeModalOnBg(event,'modal-Patrick')">
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal('modal-Patrick')">&times;</button>
@@ -472,6 +459,19 @@ h1,h2,h3,h4,h5,h6{font-family:'Inter',sans-serif;font-weight:700;line-height:1.3
       <p>Tobias earned his bachelor&#8217;s degree in Biomedical Sciences from the University of Reutlingen, followed by a Master&#8217;s in Molecular Biomedicine at the University of M&#252;nster. He performed his Master&#8217;s thesis at the Institute of Human Genetics at the University Hospital Heidelberg, focusing on developing methods to analyze the MAGEL2 protein in human neurons derived from pluripotent stem cells.</p>
       <p>He joined our group in February 2026 to set up a human intestinal organoid screening and evaluation platform for HEV and other enteric viruses.</p>
       <p>Tobias enjoys outdoor activities, loves cooking, playing basketball, and pursues many other interests.</p>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-Eleni" onclick="closeModalOnBg(event,'modal-Eleni')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-Eleni')">&times;</button>
+    <img class="modal-portrait" src="img/Eleni.jpg" alt="Eleni Loukou">
+    <h3 class="modal-name">Eleni Loukou, MSc</h3>
+    <div class="modal-role">PhD student</div>
+    <div class="modal-bio">
+      <p>Eleni received her BSc in Pharmaceutical Sciences from Aristotle University of Thessaloniki, Greece. She then completed her MSc in &ldquo;Biomedical and Molecular Sciences for the Diagnosis and Treatment of Diseases&rdquo; at the School of Medicine, Democritus University of Thrace, Greece. Her master&#8217;s thesis focused on the development of secondary neurulation-like neuromyocardial organoids from induced pluripotent stem cells (iPSCs) derived from a male patient with Friedreich&#8217;s Ataxia.</p>
+      <p>In May 2026, she joined the Dao Thi lab, where she works on hPSC-derived intestinal organoids to study HEV biology.</p>
+      <p>Outside the lab, she enjoys long walks in nature, watching movies, solving puzzles, dancing, and spending time with her dog.</p>
     </div>
   </div>
 </div>
